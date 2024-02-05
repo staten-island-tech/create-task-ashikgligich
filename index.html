@@ -41,52 +41,55 @@
           </div>
         </div>
       </div>
-      <div style="margin-top: 10vh">
-      <form action="" id="form">
-        <label for="firstName">Year</label>
-        <input type="text" name="firstName" class="first-name" placeholder="2022"/>
-
-        <label for="Title">Month</label>
-        <input type="text" name="cardTitle" class="card-title" placeholder="11"/>
-
-        <label for="Data">Day</label>
-        <input type="text" name="cardData" class="card-data" placeholder="01"/>
-
-        <input type="submit" value="click to submit" id="submit" />
-      </form>
-      </div>
-      <!-- <div style="margin-top: 200px">
-        <form action="" id="form">
-          <label for="firstName">Enter name</label>
-          <input type="text" name="firstName" class="first-name" />
-
-          <label for="Title">Enter Title</label>
-          <input type="text" name="cardTitle" class="card-title" />
-
-          <label for="Data">Enter Data</label>
-          <input type="text" name="cardData" class="card-data" />
-
-          <label for="Picture">Enter Link</label>
-          <input type="url" name="cardPicture" class="card-picture" />
-          <input type="submit" value="click to submit" id="submit" />
-        </form>
-      </div> -->
-      <div class="imput stuff">
-        <form name="form">
+  
+      <h1>Mortgage Calculator</h1>
+      <div class="imputstuff">
+        <form name="form"id="form">
           <table align="center">
             <tbody>
+              <tr>
               <td align="right">Home Price</td>
               <td align="right">
                 <input type="text" name="houseprice" id="houseprice" value="1000000" class="dollar">
               </td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
               <td align="right">Down Payment</td>
               <td align="right">
                 <input type="text" name="downpayment" id="downpayment" value="200000" class="dollar">
               </td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
               <td align="right">Loan Term</td>
               <td align="right">
-                <input type="text" name="downpayment" id="downpayment" value="200000" class="dollar">
+                <input type="text" name="loanterm" id="loanterm" value="30" class="year">
               </td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right">Intrest Rate</td>
+              <td align="right">
+                <input type="text" name="intrestrate" id="intrestrate" value="7.03" class="precent">
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right">Start Date</td>
+              <td align="right">
+                <input type="text" name="startdatem" id="startdatem" value="Jan" class="month">
+              </td>
+              <td align="right">
+                <input type="text" name="startdatey" id="startdatey" value="2024" class="year">
+              </td>
+              
+            </tr>
+              <tr>
+                <td>
+                <input type="submit" value="click to submit" id="submit" />
+              </td>
+              </tr>
 
 
             </tbody>
@@ -94,21 +97,53 @@
         </form>
       </div>
 
-      <div class="flex-container">
-        <div class="grow" id="grow">
-          <div id="animation1">
-            <img id="imgYes" src="./public/ASH_TEK_logo.png" alt="F44" />
-            <h2 id="myH2">Format Of Cards Displayed</h2>
-            <h4 id="myH4">Website If Project has one</h4>
-            <h4 id="myH4">Basic Information</h4>
-            <h6 id="myH6">Project ID</h6>
-            <button type="button">Delete</button>
-          </div>
-        </div>
+
+
+      <div class="results">
+        <div class="calculations">
+          <table align="center">
+            <tbody>
+              <tr>
+                <td>&nbsp;</td>
+              <td align="right">Monthly</td>
+              <td align="right">Total</td>
+            </tr>
+            <tr>
+            <td align="right">Mortgage Payment</td>
+            <td align="right">5338.55</td>
+            <td align="right">1921877.29</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="right">Home Price</td>
+            <td align="right">1000000</td>
+          </tr>
+          <tr>
+            <td align="right">Loan Amount</td>
+            <td align="right">800000</td>
+          </tr>
+          <tr>
+            <td align="right">Down Payment</td>
+            <td align="right">200000</td>
+          </tr>
+          <tr>
+            <td align="right">Total Interest</td>
+            <td align="right">1121877.29</td>
+          </tr>
+          <tr>
+            <td align="right">Total Payments</td>
+            <td align="right">1921877.29</td> 
+          </tr>
+          <tr>
+            <td align="right">Payoff Date</td>
+            <td align="right">Jan 2054</td>
+          </tr>
+          </tbody>
+        </table>
       </div>
-
-
-
+    </div>
 
     <div id="app">
 
