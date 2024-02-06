@@ -19,8 +19,8 @@
       <div style="position: fixed; top: 0; left: 0">
         <div style="position: absolute; top: 0; left: 0">
           <div class="top-bar">
-            <img src="./public/ASH_TEK_logo.png" id="logo" alt="Logo"/> Financial Calculator
-            <div style="position: fixed; top: 0; right: 0"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" id="logo" alt="Nasa Logo"/></div>
+            <!-- <img src="./public/ASH_TEK_logo.png" id="logo" alt="Logo"/> Financial Calculator -->
+            <!-- <div style="position: fixed; top: 0; right: 0"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" id="logo" alt="Nasa Logo"/></div> -->
           </div>
         </div>
         
@@ -100,7 +100,7 @@
 
 
       <div class="results">
-        <div class="calculations">
+        <div class="calculations" id="outputs">
           <table align="center">
             <tbody>
               <tr>
@@ -110,39 +110,60 @@
             </tr>
             <tr>
             <td align="right">Mortgage Payment</td>
-            <td align="right">5338.55</td>
-            <td align="right">1921877.29</td>
+            <td align="right" id="Mortgagem">5338.55</td>
+            <td align="right" id="Mortgaget">1921877.29</td>
           </tr>
           <tr>
             <td>&nbsp;</td>
           </tr>
           <tr>
             <td align="right">Home Price</td>
-            <td align="right">1000000</td>
+            <td align="right" id="price">1000000</td>
           </tr>
           <tr>
             <td align="right">Loan Amount</td>
-            <td align="right">800000</td>
+            <td align="right" id="loanamount">800000</td>
           </tr>
           <tr>
             <td align="right">Down Payment</td>
-            <td align="right">200000</td>
+            <td align="right" id="downpaymento">200000</td>
           </tr>
           <tr>
             <td align="right">Total Interest</td>
-            <td align="right">1121877.29</td>
+            <td align="right" id="totalintrest">1121877.29</td>
           </tr>
           <tr>
             <td align="right">Total Payments</td>
-            <td align="right">1921877.29</td> 
+            <td align="right" id="totalpayment">1921877.29</td> 
           </tr>
           <tr>
             <td align="right">Payoff Date</td>
-            <td align="right">Jan 2054</td>
+            <td align="right" id="payoffdate">Jan 2054</td>
           </tr>
           </tbody>
         </table>
       </div>
+    </div>
+    <div id="YearlyEndBalance">
+      
+      <table align="center">
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>
+
+              Yearly End Balance:
+            </td>
+           
+          </tr>
+          <tr>
+            <td>Year</td>
+            <td>Balance</td>
+          </tr>
+          <tr>
+            <td id="l"></td>
+            <td id="k"></td>
+
     </div>
 
     <div id="app">
